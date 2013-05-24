@@ -35,8 +35,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-     
-
         // create a new flow object
         VFlow flow = FlowFactory.newFlow();
 
@@ -55,6 +53,7 @@ public class Main extends Application {
         
         // choose a subflow node
         VFlow subflow = flow.getSubControllers().iterator().next();
+        
         // add another visualization
         showFlow(subflow, new Stage(), "VWorkflows Tutorial 03: View 3 (Subflow)");
 
